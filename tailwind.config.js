@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   safelist: [
     'bg-cyber-primary',
     'bg-cyber-secondary',
@@ -15,7 +12,8 @@ export default {
     'text-cyber-highlight',
     'text-cyber-warning',
     {
-      pattern: /bg-cyber-(primary|secondary|accent|highlight|warning)\/(5|10|20|30|40|50|60|70|80|90)/,
+      pattern:
+        /bg-cyber-(primary|secondary|accent|highlight|warning)\/(5|10|20|30|40|50|60|70|80|90)/,
     },
   ],
   theme: {
@@ -26,18 +24,18 @@ export default {
       },
       colors: {
         cyber: {
-          primary: '#7B61FF',    // 主色调：深紫色
-          secondary: '#FF61DC',  // 次要色：粉紫色
-          accent: '#61FFEA',     // 强调色：青色
-          dark: '#0a0a0a',       // 深色背景
-          light: '#2a2a2a',      // 浅色背景
-          text: '#E0E0E0',       // 主要文本色
-          highlight: '#FFB561',  // 高亮色：金橙色
+          primary: '#7B61FF', // 主色调：深紫色
+          secondary: '#FF61DC', // 次要色：粉紫色
+          accent: '#61FFEA', // 强调色：青色
+          dark: '#0a0a0a', // 深色背景
+          light: '#2a2a2a', // 浅色背景
+          text: '#E0E0E0', // 主要文本色
+          highlight: '#FFB561', // 高亮色：金橙色
           warning: '#FFB561',
         },
       },
       animation: {
-        'glow': 'glow 2s ease-in-out infinite alternate',
+        glow: 'glow 2s ease-in-out infinite alternate',
       },
       keyframes: {
         glow: {
@@ -48,4 +46,4 @@ export default {
     },
   },
   plugins: [],
-}
+};
